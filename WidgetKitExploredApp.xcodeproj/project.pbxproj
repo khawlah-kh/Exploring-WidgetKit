@@ -16,7 +16,6 @@
 		90A683CD27F1CCEC0092DF4E /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A683CC27F1CCEC0092DF4E /* SimpleWidget.swift */; };
 		90A683CF27F1CCEE0092DF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A683CE27F1CCEE0092DF4E /* Assets.xcassets */; };
 		90A683D327F1CCEE0092DF4E /* SimpleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90A683C527F1CCEC0092DF4E /* SimpleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		90A683DA27F1D4F60092DF4E /* SimpleWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A683D827F1D1150092DF4E /* SimpleWidgetEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +54,6 @@
 		90A683CC27F1CCEC0092DF4E /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
 		90A683CE27F1CCEE0092DF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A683D027F1CCEE0092DF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90A683D827F1D1150092DF4E /* SimpleWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				90A683CC27F1CCEC0092DF4E /* SimpleWidget.swift */,
-				90A683D827F1D1150092DF4E /* SimpleWidgetEntryView.swift */,
 				90A683CE27F1CCEE0092DF4E /* Assets.xcassets */,
 				90A683D027F1CCEE0092DF4E /* Info.plist */,
 			);
@@ -247,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A683CD27F1CCEC0092DF4E /* SimpleWidget.swift in Sources */,
-				90A683DA27F1D4F60092DF4E /* SimpleWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

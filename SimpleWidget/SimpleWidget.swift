@@ -40,6 +40,20 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
+
+@main
+struct SimpleWidget: Widget {
+    let kind: String = "SimpleWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            SimpleWidgetEntryView(entry: entry)
+        }
+        .configurationDisplayName("My Widget")
+        .description("This is an example widget.")
+    }
+}
+
 struct SimpleWidgetEntryView : View {
     var entry: Provider.Entry
 
@@ -84,20 +98,6 @@ struct SimpleWidgetEntryView : View {
         
     }
 }
-
-@main
-struct SimpleWidget: Widget {
-    let kind: String = "SimpleWidget"
-
-    var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            SimpleWidgetEntryView(entry: entry)
-        }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
-    }
-}
-
 struct SimpleWidget_Previews: PreviewProvider {
     static var previews: some View {
         SimpleWidgetEntryView(entry: SimpleEntry(date: Date()))
